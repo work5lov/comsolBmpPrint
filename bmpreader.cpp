@@ -51,7 +51,7 @@ void BMPReader::displayBMP() {
     int padding = (4 - (width * (infoHeader.biBitCount / 8)) % 4) % 4;
 
     // Набор символов для отображения разных уровней серого
-    const std::string shades = " .:-*#@"; // Обратите внимание на порядок символов
+    const std::string shades = " .:-*#@";
 
     for (int y = height - 1; y >= 0; --y) { // BMP хранит строки в обратном порядке
         for (int x = 0; x < width; ++x) {
